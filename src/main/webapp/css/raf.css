@@ -1,0 +1,85 @@
+/*#welcomeDiv{*/
+/*    font-size: 30px;*/
+/*    font-family: 'Roboto Mono', sans-serif;*/
+/*    margin: auto;*/
+/*    width: 70%;*/
+/*    padding: 1%;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*}*/
+#mainDiv{
+    font-size: 30px;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+}
+#table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#table tr:nth-child(even){background-color: #bbe4e9;}
+select{
+    /* Reset Select */
+    /*margin-left: 25%;*/
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 10%;
+    height: 5%;
+    /* Personalize */
+    /*flex: 1;*/
+    /*padding: 0 1em;*/
+    background-color: #2c3e50;
+    /*background-image: none;*/
+}
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+/* Custom Select wrapper */
+#selection{
+    margin-right: auto;
+}
+#it{
+    margin-left: 10%;
+}
+/* Arrow */
+select::after {
+    content: '\25BC';
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+/* Transition */
+#selection:hover::after {
+    color: #f39c12;
+}
+.input{
+    margin-left: 10%;
+    width: 30%;
+    height: 5%;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.submit{
+    margin-left: 20%;
+    margin-right: 35%;
+    background-color: black; /* Green */
+    border: none;
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
